@@ -1,22 +1,10 @@
 <?php 
-
-/***
-* e-Dokter from version 0.1 Beta
-* Last modified: 02 Pebruari 2018
-* Author : drg. Faisol Basoro
-* Email : drg.faisol@basoro.org
-*
-* File : config.php
-* Description : Main config, function and helper
-* Licence under GPL
-***/
-
 if (preg_match ('/config.php/', basename($_SERVER['PHP_SELF']))) die ('Unable to access this script directly from browser!');
 
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
-define('DB_PASS', 'asysyifa');
-define('DB_NAME', 'sik_serv1103');
+define('DB_PASS', '');
+define('DB_NAME', '');
 
 $connection = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME); 
 
